@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": "user_admin",
+      "name": "Иван Петров",
+      "login": "admin",
+      "password": "admin",
+      "role": "admin",
+      "department": "welding",
+      "workLogs": []
+    },
+    {
+      "id": "user_worker",
+      "name": "Сергей Иванов",
+      "login": "worker",
+      "password": "worker",
+      "role": "worker",
+      "department": "welding",
+      "workLogs": [
+        {
+          "date": "2026-02-27",
+          "seconds": 5
+        }
+      ]
+    },
+    {
+      "id": "user_paint",
+      "name": "Ольга Смирнова",
+      "login": "paint",
+      "password": "paint",
+      "role": "worker",
+      "department": "paint",
+      "workLogs": []
+    }
+  ],
+  "assortment": [
+    {
+      "id": "product_1",
+      "name": "Стеллаж",
+      "wire": [
+        {
+          "type": "d3",
+          "lengthCm": 120,
+          "qty": 6
+        },
+        {
+          "type": "d4",
+          "lengthCm": 80,
+          "qty": 4
+        }
+      ],
+      "tube": [
+        {
+          "type": "20x20",
+          "lengthCm": 150,
+          "qty": 4
+        }
+      ],
+      "misc": [
+        {
+          "name": "болты",
+          "qty": 12
+        }
+      ]
+    },
+    {
+      "id": "product_2",
+      "name": "Кронштейн",
+      "wire": [
+        {
+          "type": "d2",
+          "lengthCm": 60,
+          "qty": 8
+        }
+      ],
+      "tube": [],
+      "misc": [
+        {
+          "name": "гайки",
+          "qty": 8
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_1",
+      "date": "2026-02-20",
+      "name": "Заказ ООО Альфа",
+      "items": [
+        {
+          "id": "item_1",
+          "productId": "product_1",
+          "productName": "Стеллаж",
+          "color": "белый",
+          "quantity": 10,
+          "status": "done",
+          "paintStatus": "ready",
+          "completedBy": "user_admin",
+          "completedDate": "2026-02-28"
+        },
+        {
+          "id": "item_2",
+          "productId": "product_2",
+          "productName": "Кронштейн",
+          "color": "черный",
+          "quantity": 24,
+          "status": "done",
+          "paintStatus": "ready",
+          "completedBy": "user_admin",
+          "completedDate": "2026-02-28"
+        }
+      ]
+    }
+  ]
+}
